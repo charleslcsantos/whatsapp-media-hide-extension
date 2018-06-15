@@ -1,0 +1,22 @@
+{
+
+	"manifest_version": 2,
+	
+  "name": "Whatsapp Media Hidden",
+  "description": "This extension hides (blurred preview) WhatsApp™ media content and . (Images, GIF's and videos preview)",
+  "version": "1.0",
+
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "css": ["main.css"]
+    }
+  ]
+
+}
